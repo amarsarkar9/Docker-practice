@@ -33,4 +33,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           docker build -t hello-docker .
+          docker tag hello-docker ghcr.io/amarsarkar9/hello-docker:latest
+          docker push ghcr.io/amarsarkar9/hello-docker:latest
         
